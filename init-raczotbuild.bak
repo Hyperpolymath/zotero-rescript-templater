@@ -1,0 +1,201 @@
+#lang racket
+
+(require racket/cmdline
+         racket/path
+         racket/file
+         racket/date
+         racket/process)
+
+;; -----------------------------------------------------------------------------
+;; CLI options
+;; -----------------------------------------------------------------------------
+(define proj-name  #f)
+(define proj-author #f)
+(define proj-desc  "RacZotBuild – a Racket‐based Zotero plugin scaffolder")
+(define do-gitinit? #f)
+
+(command-line
+ #:program "init-raczotbuild.rkt"
+ #:once-each
+ [("-n" "--name")       proj-name   "Project directory & Racket package name"]
+ [("-a" "--author")     proj-author "Author name"]
+ [("-d" "--desc")       proj-desc   "Project description"]
+ [("-g" "--git-init")   do-gitinit? #f        "Run git init + first commit"]
+ #:after-each
+ [(void)
+  (unless (and proj-name proj-author)
+    (error 'args "Both --name and --author are required"))])
+
+;; -----------------------------------------------------------------------------
+;; Helpers
+;; -----------------------------------------------------------------------------
+(define (write-file path content)
+  (define dir (path-only path))
+  (when dir (mkdirs dir))
+  (call-with-output-file path
+    (λ (out) (display content out))
+    #:exists 'replace))
+
+(define (now-year)
+  (date-year (current-date)))
+
+;; -----------------------------------------------------------------------------
+;; Scaffold directories & files
+;; -----------------------------------------------------------------------------
+(define root (simplify-path (path-join (current-directory) proj-name)))
+(when (directory-exists? root)
+  (error 'main "Directory '~a' already exists" root))
+(mkdirs root)
+
+;; 1. Racket package layout
+(for ([sub '("raczotbuild" "templates" "tests" "examples" "docs")])
+  (mkdirs (path-join root sub)))
+
+;; 2. info.rkt
+(write-file (path-join root "raczotbuild" "info.rkt")
+            (format
+             "#lang setup/infotab\n\n"
+             "(\n"
+             " name       ~s\n"
+             " version    \"0.1.0\"\n"
+             " authors    '(~s)\n"
+             " license    \"MIT\"\n"
+             " categories '(scaffolding zotero racket)\n"
+             " description ~s\n"
+             " homepage    \"https://github.com/your/repo\"\n"
+             " files "
+             "(submod \n"
+             "          \"raczotbuild/main.rkt\" \n"
+             "          \"raczotbuild/*\")\n"
+             ")\n"
+             (list proj-name)
+             proj-author
+             proj-desc))
+
+;; 3. main.rkt stub
+(write-file (path-join root "raczotbuild" "main.rkt")
+            (format
+             "#lang racket\n\n"
+             ";; ~a\n\n"
+             "(provide scaffold create-audit verify-audit)\n\n"
+             ";; API stubs:\n"
+             "(define (scaffold project author template)\n"
+             "  (error 'scaffold \"Not implemented\"))\n\n"
+             "(define (create-audit project)\n"
+             "  (error 'create-audit \"Not implemented\"))\n\n"
+             "(define (verify-audit project)\n"
+             "  (error 'verify-audit \"Not implemented\"))\n"
+             proj-name))
+
+;; 4. README.md
+(write-file (path-join root "README.md")
+            (format
+             "# ~a\n\n"
+             "~a\n\n"
+             "## Installation\n\n"
+             "```shell\n"
+             "raco pkg install ~a\n"
+             "```\n\n"
+             "## Usage\n\n"
+             "```shell\n"
+             "raco ~a scaffold -p MyPlugin -a \"Author Name\" -t practitioner\n"
+             "```\n\n"
+             "## License\n\n"
+             "MIT © ~a\n"
+             proj-name
+             proj-desc
+             proj-name
+             proj-name
+             proj-author))
+
+;; 5. LICENSE (MIT)
+(write-file (path-join root "LICENSE")
+            (format
+             "MIT License\n\n"
+             "Copyright (c) ~a ~a\n\n"
+             "Permission is hereby granted, free of charge, to any person obtaining a copy\n"
+             "of this software...\n"
+             proj-author
+             (now-year)))
+
+;; 6. .gitignore
+(write-file (path-join root ".gitignore")
+            (string-join
+             '("[^]*/_build/"
+               "[^]*/deps/"
+               "*.zo"
+               ".DS_Store"
+               "node_modules/"
+               "template-*.json"
+               "audit-index.json"
+               "audit-index.json.sig")
+             "\n"))
+
+;; 7. .gitattributes
+(write-file (path-join root ".gitattributes")
+            (string-join
+             '("*.rkt text"
+               "*.json text"
+               "templates/*.json text"
+               "LICENSE text"
+               "README.md text")
+             "\n"))
+
+;; 8. GitHub Actions CI
+(mkdirs (path-join root ".github" "workflows"))
+(write-file (path-join root ".github" "workflows" "ci.yml")
+            (string-join
+             '("name: CI"
+               ""
+               "on: [push, pull_request]"
+               ""
+               "jobs:"
+               "  build:"
+               "    runs-on: ubuntu-latest"
+               "    steps:"
+               "      - uses: actions/checkout@v3"
+               "      - name: Install Racket"
+               "        uses: racket-lang/setup-racket@v1"
+               "      - name: Run Tests"
+               "        run: raco test"
+               "      - name: Scaffold Smoke Test"
+               "        run: raco racket -l raczotbuild/main.rkt"
+               "                 -- -p SmokeTest -a \"CI\" -t practitioner -g -s"
+               "      - name: Verify Integrity"
+               "        run: raco racket -l raczotbuild/main.rkt"
+               "                 -- -p SmokeTest -a \"CI\" -v"))
+             "\n"))
+
+;; 9. Example JSON template
+(write-file (path-join root "templates" "practitioner.json")
+            (jsexpr->string
+             (hash 'version "0.1.0"
+                   'files
+                   (hash "README.md" "# {{ProjectName}}\n\nPro scaffold by {{AuthorName}}."
+                         "main.rkt" "(provide main)\n"))))
+
+;; 10. Rackunit test stub
+(write-file (path-join root "tests" "main-test.rkt")
+            "#lang racket\n(require rackunit)\n\n;; TODO: add tests\n")
+
+;; 11. Example usage script
+(write-file (path-join root "examples" "run-scaffold.rkt")
+            (string-join
+             (list
+              "#lang racket"
+              ""
+              "(require \"../raczotbuild/main.rkt\")"
+              ""
+              "(scaffold \"MyPlugin\" \"Author Name\" \"practitioner\")")
+             "\n"))
+
+;; 12. Optionally init Git + commit
+(when do-gitinit?
+  (parameterize ([current-directory root])
+    (system*/exit-code "git" "init" ".")
+    (system*/exit-code "git" "add" ".")
+    (system*/exit-code "git" "commit" "-m" (string-append "chore: init " proj-name)))
+  (printf "✓ Git repository initialized and initial commit made\n"))
+
+;; Final message
+(printf "RacZotBuild repo '~a' created successfully!\n" proj-name)
