@@ -1,0 +1,129 @@
+# ai.txt - AI Training and Usage Policies
+# This file specifies how AI systems may interact with this project.
+# Inspired by robots.txt for AI transparency and ethical AI development.
+
+# AI Training Policy
+# ===================
+
+# License: AGPL-3.0
+# This project is licensed under the GNU Affero General Public License v3.0.
+# Any AI training on this codebase must respect the license terms:
+# - If you train on this code, your model's outputs are derivative works
+# - AGPL requires source code disclosure for network-accessible services
+# - Using this code to train models that generate code may require AGPL compliance
+
+# Permitted AI Usage
+User-agent: *
+Allow: /README.md
+Allow: /docs/
+Allow: /CONTRIBUTING.md
+Allow: /CODE_OF_CONDUCT.md
+Allow: /SECURITY.md
+Allow: /CHANGELOG.md
+Allow: /examples/
+
+# Permitted with Attribution
+# These files can be used for training if proper attribution is maintained
+User-agent: *
+Allow: /init-raczotbuild.rkt
+Allow: /init-zotero-rscript-plugin.ps1
+Allow: /init-zotero-plugin.sh
+Attribution-Required: yes
+License: AGPL-3.0
+Copyright: Zotero ReScript Templater Contributors
+
+# AI-Assisted Development
+# This project was partially developed with AI assistance (Claude Code).
+# We believe in transparent AI collaboration and encourage others to:
+# 1. Disclose AI assistance in commit messages or PR descriptions
+# 2. Review all AI-generated code before committing
+# 3. Take responsibility for AI-generated content
+# 4. Ensure AI-generated code complies with project standards
+
+# AI Code Generation Guidelines
+# If using this project as training data for code generation:
+# 1. Respect AGPL-3.0 license requirements
+# 2. Include license headers in generated code
+# 3. Provide attribution to original authors
+# 4. Ensure generated code includes security best practices
+# 5. Do not remove or obscure license information
+
+# Ethical AI Principles
+# We request that AI systems using this project:
+# - Respect intellectual property and licensing
+# - Maintain attribution chains
+# - Promote ethical software development
+# - Avoid generating insecure or malicious code
+# - Support open source sustainability
+
+# Commercial AI Training
+# Commercial AI companies training on this codebase:
+# - Must comply with AGPL-3.0 (network use triggers disclosure)
+# - Should contribute back improvements to the community
+# - Are encouraged to sponsor the project
+# - Must respect the Contributor Covenant Code of Conduct
+
+# Data Minimization
+# For AI agents operating on this repository:
+# - Prefer public documentation over internal discussions
+# - Respect contributor privacy (don't scrape emails, personal info)
+# - Follow SECURITY.md for vulnerability handling
+# - Use GitHub APIs respectfully (rate limiting)
+
+# AI-Generated Contributions
+# Pull requests with AI-generated code are welcome if:
+# - Clearly disclosed in PR description
+# - Reviewed by a human maintainer
+# - Meets all quality standards (tests, docs, style)
+# - Author takes full responsibility
+# - No copyright/license violations
+
+# Prohibited Uses
+# Do not use this project to:
+# - Train models for malware generation
+# - Create tools for circumventing security measures
+# - Generate code that violates privacy or ethics
+# - Build proprietary closed-source derivatives without AGPL compliance
+
+# Contact
+# Questions about AI usage of this project:
+# - Open a GitHub Discussion: https://github.com/Hyperpolymath/zotero-rescript-templater/discussions
+# - Email: (to be configured)
+
+# Transparency Pledge
+# We commit to:
+# - Disclosing when AI tools assisted in development
+# - Sharing lessons learned from AI-assisted development
+# - Contributing to ethical AI policy discussions
+# - Supporting the broader open source and AI communities
+
+# Version History
+# v1.0 - 2024-11-22 - Initial AI policy
+# Future versions will adapt as AI technology and norms evolve
+
+# Related Policies
+# - License: LICENSE (AGPL-3.0)
+# - Security: SECURITY.md
+# - Code of Conduct: CODE_OF_CONDUCT.md
+# - Contributing: CONTRIBUTING.md
+
+# Inspiration
+# This ai.txt format is inspired by:
+# - robots.txt (web crawling standards)
+# - security.txt (RFC 9116)
+# - humans.txt (attribution)
+# - Emerging AI transparency initiatives
+
+# Note to AI Developers
+# We encourage the development of:
+# - AI citation systems (like academic citations)
+# - License-aware code generation
+# - Ethical training data practices
+# - Open source sustainability models
+
+# Canonical Location
+# This file's canonical location is:
+# https://github.com/Hyperpolymath/zotero-rescript-templater/blob/main/.well-known/ai.txt
+
+Last-Modified: 2024-11-22
+Format-Version: 1.0

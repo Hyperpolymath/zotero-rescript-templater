@@ -1,0 +1,169 @@
+# CITATION.cff - Citation File Format for academic attribution
+# https://citation-file-format.github.io/
+# This file allows researchers to cite this software in academic publications
+
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+title: "Zotero ReScript Templater: A Scaffolding System for Zotero Plugins"
+abstract: |
+  The Zotero ReScript Templater is a comprehensive scaffolding system for
+  creating Zotero plugins with type-safe, memory-safe, and offline-first
+  architecture. It implements the Rhodium Standard Repository (RSR) framework
+  and provides three template types (Practitioner, Researcher, Student) with
+  full CI/CD infrastructure, testing, and documentation.
+
+  Key features:
+  - Cross-platform support (Windows, Linux, macOS)
+  - Three language implementations (PowerShell, Racket, Bash)
+  - Type-safe code generation (ReScript, TypeScript)
+  - File integrity verification (XXHash64)
+  - Comprehensive testing (70+ tests)
+  - CI/CD automation (GitHub Actions)
+  - RSR framework compliance (Platinum level target)
+  - TPCF graduated trust model for governance
+
+type: software
+authors:
+  - family-names: "(To be filled)"
+    given-names: "(To be filled)"
+    affiliation: "Independent"
+    orcid: "https://orcid.org/0000-0000-0000-0000"  # Update with actual ORCID
+repository-code: "https://github.com/Hyperpolymath/zotero-rescript-templater"
+url: "https://github.com/Hyperpolymath/zotero-rescript-templater"
+license: AGPL-3.0-only
+version: "0.2.0"
+date-released: "2024-11-22"
+
+keywords:
+  - scaffolding
+  - code generation
+  - Zotero
+  - ReScript
+  - TypeScript
+  - plugin development
+  - type safety
+  - memory safety
+  - offline-first
+  - RSR framework
+  - TPCF
+  - research software
+  - software engineering
+  - development tools
+
+# Preferred citation (APA style)
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "(To be filled)"
+      given-names: "(To be filled)"
+  title: "Zotero ReScript Templater: A Scaffolding System for Zotero Plugins"
+  year: 2024
+  url: "https://github.com/Hyperpolymath/zotero-rescript-templater"
+  version: "0.2.0"
+
+# References (key dependencies and inspirations)
+references:
+  - type: software
+    title: "Zotero"
+    authors:
+      - name: "Zotero Team"
+    url: "https://www.zotero.org/"
+    notes: "Reference management software that this project targets"
+
+  - type: software
+    title: "Racket Programming Language"
+    authors:
+      - name: "PLT Design Inc."
+    url: "https://racket-lang.org/"
+    notes: "Homoiconic language implementation"
+
+  - type: software
+    title: "PowerShell Core"
+    authors:
+      - name: "Microsoft Corporation"
+    url: "https://github.com/PowerShell/PowerShell"
+    notes: "Cross-platform automation language"
+
+  - type: software
+    title: "ReScript"
+    authors:
+      - name: "ReScript Team"
+    url: "https://rescript-lang.org/"
+    notes: "Type-safe language for JavaScript"
+
+  - type: software
+    title: "TypeScript"
+    authors:
+      - name: "Microsoft Corporation"
+    url: "https://www.typescriptlang.org/"
+    notes: "Typed superset of JavaScript"
+
+# Related publications (to be added as they are published)
+# - type: article
+#   title: "Rhodium Standard Repository Framework: A Comprehensive Evaluation"
+#   authors:
+#     - family-names: "(Author)"
+#   journal: "(Conference/Journal)"
+#   year: 2025
+#   url: "https://doi.org/..."
+
+# Contact information
+contact:
+  - email: "security@(to-be-configured)"
+    name: "Project Security Team"
+
+# Identifiers (to be added)
+# identifiers:
+#   - type: doi
+#     value: "10.5281/zenodo.XXXXXX"
+#     description: "Zenodo DOI for version 0.2.0"
+
+# Additional metadata
+programming-languages:
+  - PowerShell
+  - Racket
+  - Bash
+  - C#
+  - JavaScript
+  - TypeScript
+  - ReScript
+
+operating-systems:
+  - Windows
+  - Linux
+  - macOS
+
+# Academic use cases
+use-cases:
+  - Research software engineering
+  - Plugin development education
+  - Type-safe code generation
+  - Offline-first development
+  - Reproducible build systems
+  - Software architecture patterns
+
+# Example BibTeX citation:
+# @software{zotero_rescript_templater_2024,
+#   author = {{To be filled}},
+#   title = {Zotero ReScript Templater: A Scaffolding System for Zotero Plugins},
+#   year = {2024},
+#   url = {https://github.com/Hyperpolymath/zotero-rescript-templater},
+#   version = {0.2.0},
+#   license = {AGPL-3.0},
+#   note = {RSR framework compliant}
+# }
+
+# Example APA citation:
+# (To be filled). (2024). Zotero ReScript Templater: A scaffolding system for
+#   Zotero plugins (Version 0.2.0) [Computer software].
+#   https://github.com/Hyperpolymath/zotero-rescript-templater
+
+# Example IEEE citation:
+# [1] (To be filled), "Zotero ReScript Templater: A Scaffolding System for
+#     Zotero Plugins," version 0.2.0, 2024. [Online]. Available:
+#     https://github.com/Hyperpolymath/zotero-rescript-templater
+
+# Example MLA citation:
+# (To be filled). Zotero ReScript Templater: A Scaffolding System for Zotero
+#   Plugins. Version 0.2.0, 2024,
+#   github.com/Hyperpolymath/zotero-rescript-templater.

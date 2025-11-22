@@ -1,0 +1,184 @@
+# humans.txt - The humans responsible & technology colophon
+# https://humanstxt.org/
+
+/* TEAM */
+
+Project Lead: (To be filled)
+Site: https://github.com/Hyperpolymath/zotero-rescript-templater
+Location: Global (distributed)
+
+/* CONTRIBUTORS */
+
+This project is built by a community of contributors.
+See: https://github.com/Hyperpolymath/zotero-rescript-templater/graphs/contributors
+
+Special thanks to:
+- All contributors who submitted issues, PRs, and feedback
+- Zotero development team for excellent plugin documentation
+- Racket community for the homoiconic programming paradigm
+- PowerShell community for cross-platform scripting
+- Open source maintainers whose projects inspired this work
+
+/* AI ASSISTANCE */
+
+Development Tools: Claude Code (Anthropic)
+Note: This project was developed with AI assistance while maintaining
+human oversight, responsibility, and decision-making. All AI-generated
+code was reviewed and modified by human developers.
+
+/* THANKS */
+
+- Zotero project (https://www.zotero.org/)
+- Racket language (https://racket-lang.org/)
+- PowerShell Core (https://github.com/PowerShell/PowerShell)
+- ReScript (https://rescript-lang.org/)
+- TypeScript (https://www.typescriptlang.org/)
+- GitHub for hosting and CI/CD
+- All open source software we depend on
+
+/* SITE */
+
+Project Name: Zotero ReScript Templater
+Purpose: Scaffolding system for Zotero plugins
+Repository: https://github.com/Hyperpolymath/zotero-rescript-templater
+Standards: RSR Framework compliant
+License: AGPL-3.0 (https://www.gnu.org/licenses/agpl-3.0.html)
+Code of Conduct: Contributor Covenant 2.1
+Last update: 2024-11-22
+Languages: PowerShell, Racket, Bash, English
+Doctype: Markdown (CommonMark), JSON, YAML
+IDE: VS Code, Vim, Emacs, others
+
+/* TECHNOLOGY COLOPHON */
+
+Languages:
+- PowerShell 7+ (Windows/Linux/macOS scaffolding)
+- Racket 8.0+ (homoiconic scaffolding)
+- Bash 4+ (Unix-like systems)
+- C# (embedded XXHash64 implementation)
+- JSON (template definitions)
+- YAML (CI/CD workflows)
+
+Template Languages:
+- ReScript (practitioner template)
+- TypeScript (student template)
+- JavaScript (all templates)
+- XUL (Zotero UI overlays)
+
+Build Tools:
+- GitHub Actions (CI/CD)
+- Pester (PowerShell testing)
+- rackunit (Racket testing)
+- Podman/Docker (containerization)
+- npm (JavaScript package management)
+
+Testing:
+- 70+ automated tests
+- Cross-platform validation
+- Integrity verification (XXHash64/SHA256)
+- Static analysis (PSScriptAnalyzer, racket check)
+- Security scanning (CodeQL, Trivy)
+
+Infrastructure:
+- Version Control: Git
+- Hosting: GitHub
+- CI/CD: GitHub Actions
+- Container Registry: GitHub Container Registry
+- Documentation: Markdown (GitHub Flavored)
+- Issue Tracking: GitHub Issues
+- Discussions: GitHub Discussions
+
+Standards Compliance:
+- RSR Framework (Rhodium Standard Repository)
+- RFC 9116 (security.txt)
+- Semantic Versioning 2.0.0
+- Keep a Changelog 1.0.0
+- Contributor Covenant 2.1
+- AGPL-3.0 License
+- EditorConfig
+- Git Attributes
+
+Development Principles:
+- Offline-first (air-gap capable)
+- Type safety (in generated templates)
+- Memory safety (GC languages)
+- Reproducible builds (containers, Nix)
+- Comprehensive testing
+- Security by design
+- Open governance (TPCF)
+- Documentation-driven development
+
+Accessibility:
+- Clear error messages
+- Comprehensive help text
+- Colored terminal output (optional)
+- Structured issue templates
+- Multiple communication channels
+
+/* PROJECT PHILOSOPHY */
+
+We believe in:
+- Transparency: All development is public
+- Community: Open contribution model
+- Quality: Comprehensive testing and documentation
+- Security: Responsible disclosure and proactive scanning
+- Ethics: Contributor Covenant Code of Conduct
+- Sustainability: AGPL ensures source availability
+- Education: Student template teaches plugin development
+- Pragmatism: Tools that work offline and cross-platform
+
+/* INSPIRATION */
+
+This project draws inspiration from:
+- Ruby on Rails (convention over configuration)
+- Yeoman (scaffolding generators)
+- create-react-app (zero-config starting points)
+- Racket's homoiconic design
+- Nix's reproducible builds
+- Rust's cargo init (project bootstrapping)
+- Git's default branch setup
+- The RSR Framework (comprehensive repository standards)
+
+/* COPYRIGHT */
+
+Copyright (c) 2024 Zotero ReScript Templater Contributors
+Licensed under AGPL-3.0
+
+For detailed copyright and license information:
+- See LICENSE file in repository
+- See CONTRIBUTING.md for contribution licensing
+- See SECURITY.md for security policies
+
+/* ATTRIBUTION */
+
+When using code from this project:
+- Maintain license headers
+- Link back to this repository
+- Credit contributors
+- Respect AGPL-3.0 requirements (especially network use disclosure)
+
+/* CONTACT */
+
+- Issues: https://github.com/Hyperpolymath/zotero-rescript-templater/issues
+- Discussions: https://github.com/Hyperpolymath/zotero-rescript-templater/discussions
+- Security: See .well-known/security.txt
+- AI Policy: See .well-known/ai.txt
+
+/* VERSION */
+
+humans.txt version: 1.0
+Project version: See CHANGELOG.md
+Last modified: 2024-11-22
+
+                                   .-.
+                                  (o o)
+                               .--. U .--.
+                              /  __| |__  \
+                             /  [__   __]  \
+                             |      | |     |
+                              \     '-'    /
+                               '._______.'
+                                  |   |
+                                  |___|
+                              Made with ♥ by humans
+                         (with a little help from AI)

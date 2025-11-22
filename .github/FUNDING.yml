@@ -1,0 +1,165 @@
+# GitHub Sponsors funding configuration
+# This file configures the "Sponsor" button on the repository
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository
+
+# Supported platforms (uncomment and add usernames as applicable)
+
+# GitHub Sponsors
+# github: [username]  # Add GitHub username(s) when GitHub Sponsors is set up
+
+# Other platforms
+# patreon: username
+# open_collective: username
+# ko_fi: username
+# tidelift: npm/package-name
+# community_bridge: project-name
+# liberapay: username
+# issuehunt: username
+# otechie: username
+# lfx_crowdfunding: project-name
+# polar: username
+
+# Custom URLs (can add multiple)
+# custom:
+#   - "https://www.buymeacoffee.com/username"
+#   - "https://donate.example.com"
+
+# ===========================================================================
+# Sponsorship Information
+# ===========================================================================
+#
+# This project is open source and free to use under the AGPL-3.0 license.
+# Sponsorship helps ensure:
+# - Continued maintenance and bug fixes
+# - New features and template types
+# - Improved documentation
+# - Community support
+# - Infrastructure costs (CI/CD, hosting)
+#
+# Ways to Support:
+# 1. Financial sponsorship (via platforms above when configured)
+# 2. Code contributions (see CONTRIBUTING.md)
+# 3. Bug reports and feature requests
+# 4. Documentation improvements
+# 5. Spreading the word about this project
+# 6. Using it in your research (cite via CITATION.cff)
+#
+# ===========================================================================
+# Sponsorship Tiers (Proposed)
+# ===========================================================================
+#
+# Individual Supporters ($5-20/month):
+# - Recognition in README.md
+# - Supporter badge on profile
+# - Early access to new templates (optional)
+# - Vote on feature priorities
+#
+# Professional Developers ($50/month):
+# - All individual benefits
+# - Priority support for issues
+# - Name/logo in SPONSORS.md
+# - Quarterly development updates
+#
+# Organizations ($100+/month):
+# - All professional benefits
+# - Logo in README.md
+# - Dedicated support channel
+# - Custom template consultation
+# - Acknowledgment in releases
+#
+# Enterprise ($500+/month):
+# - All organization benefits
+# - Custom feature development
+# - Service Level Agreement (SLA)
+# - Training/onboarding support
+# - Annual roadmap consultation
+#
+# ===========================================================================
+# Where Funds Go
+# ===========================================================================
+#
+# Sponsorship funds support:
+# - Maintainer time (code review, issue triage, releases)
+# - Infrastructure (GitHub Actions minutes, package hosting)
+# - Development tools (licenses, services)
+# - Community events (conferences, meetups)
+# - Documentation and educational materials
+# - Bounties for specific features or bugs
+# - Long-term project sustainability
+#
+# Financial transparency:
+# - Quarterly reports published (when sponsorship active)
+# - All spending tracked and documented
+# - Decisions made by Perimeter 1 maintainers (see TPCF.md)
+#
+# ===========================================================================
+# Alternative Support Methods
+# ===========================================================================
+#
+# Can't sponsor financially? Here are other ways to help:
+#
+# - Star the repository ⭐ (helps visibility)
+# - Share with colleagues who work with Zotero
+# - Write blog posts or tutorials
+# - Contribute code (see CONTRIBUTING.md)
+# - Answer questions in Discussions
+# - Report bugs clearly and thoroughly
+# - Test pre-release versions
+# - Translate documentation
+# - Improve test coverage
+# - Add new template types
+# - Package for distribution (PSGallery, Racket catalog)
+#
+# ===========================================================================
+# Corporate Sponsorship
+# ===========================================================================
+#
+# Companies using this project in production:
+#
+# Consider sponsoring if your organization:
+# - Uses this tool to scaffold Zotero plugins
+# - Has saved development time with these templates
+# - Benefits from the testing and CI/CD infrastructure
+# - Relies on the offline-first, type-safe approach
+# - Values the AGPL-3.0 license and open source model
+#
+# Corporate sponsorship benefits:
+# - Supports the ecosystem you depend on
+# - Ensures long-term maintenance
+# - Demonstrates commitment to open source
+# - Potential tax benefits (consult your accountant)
+# - Positive brand association
+# - Recruitment tool (engineers respect sponsors)
+#
+# ===========================================================================
+# Academic/Research Support
+# ===========================================================================
+#
+# Using this project in research?
+#
+# - Cite using CITATION.cff (helps track academic impact)
+# - Mention in acknowledgments section
+# - Share publications that reference this work
+# - Consider grant funding for enhancements
+# - Collaborate on academic papers (see RSR_COMPLIANCE.md)
+#
+# ===========================================================================
+# Questions?
+# ===========================================================================
+#
+# For sponsorship inquiries:
+# - Open a GitHub Discussion
+# - Email: (to be configured)
+# - Tag @Hyperpolymath in an issue
+#
+# We're happy to discuss:
+# - Custom sponsorship tiers
+# - In-kind contributions (infrastructure, services)
+# - Corporate partnership opportunities
+# - Grant collaboration
+# - Academic/research partnerships
+#
+# ===========================================================================
+
+# Note: This file will be updated when sponsorship platforms are activated.
+# Last updated: 2024-11-22

@@ -1,0 +1,47 @@
+# security.txt - RFC 9116 Compliant Security Contact Information
+# https://securitytxt.org/
+# This file specifies how security researchers should disclose vulnerabilities.
+
+Contact: https://github.com/Hyperpolymath/zotero-rescript-templater/security/advisories/new
+Contact: mailto:security@(to-be-configured)
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://github.com/Hyperpolymath/zotero-rescript-templater/blob/main/.well-known/security.txt
+
+# Security Policy
+Policy: https://github.com/Hyperpolymath/zotero-rescript-templater/blob/main/SECURITY.md
+
+# Acknowledgments
+Acknowledgments: https://github.com/Hyperpolymath/zotero-rescript-templater/blob/main/SECURITY.md#security-hall-of-fame
+
+# Encryption
+# Encryption: (PGP key URL to be added if/when configured)
+
+# Hiring
+# (Not currently hiring - open source project)
+
+# PGP/GPG Signature
+# This file should be signed with a PGP key for verification.
+# To verify: gpg --verify security.txt.sig security.txt
+# (Signature to be added in production)
+
+# Additional Notes:
+# - Please report security vulnerabilities privately via GitHub Security Advisories
+# - Do not create public issues for security vulnerabilities
+# - See SECURITY.md for our responsible disclosure policy
+# - We typically respond within 48 hours and provide updates within 7 days
+# - Security fixes are prioritized and released as soon as possible
+
+# Scope:
+# - PowerShell scaffolder (init-zotero-rscript-plugin.ps1)
+# - Racket scaffolder (init-raczotbuild.rkt)
+# - Bash scaffolder (init-zotero-plugin.sh)
+# - Generated templates (practitioner, researcher, student)
+# - Build infrastructure (CI/CD, container images)
+# - Documentation and metadata
+
+# Out of Scope:
+# - Vulnerabilities in third-party dependencies (report to upstream)
+# - Social engineering attacks
+# - Physical security
+# - Denial of service (unless amplification attack)
