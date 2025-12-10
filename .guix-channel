@@ -1,0 +1,7 @@
+;; zotero-rescript-templater - Guix Channel
+;; Add to ~/.config/guix/channels.scm
+
+(channel
+ (version 0)
+ (url "https://github.com/hyperpolymath/zotero-rescript-templater")
+ (branch "main"))
